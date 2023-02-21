@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 1640531527 ≈ 2 ^ 32 * (1 - 1 / φ), φ = (√5 + 1) ÷ 2
 const HASH_INCREMENT = 0x61c88647
 
 func main() {
