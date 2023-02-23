@@ -4,7 +4,7 @@ import "fmt"
 
 type user struct {}
 
-func (u user) Hello(name string) {
+func (u *user) Hello(name string) {
 	fmt.Println("你好" + name)
 	//u.NoHello()
 }
@@ -17,9 +17,9 @@ func (u user) NoHello() {
 	fmt.Println("你不好")
 }
 
-//go:noinline
+
 func main() {
-	var u *user
+	var u *user = &user{}
 	u.Hello("于立凯")
 	u.NoHello()
 }
