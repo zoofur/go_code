@@ -51,6 +51,7 @@ func NewServer(config *Config, addr string) (*Config, error) {
 	if addr == "" {
 		return nil, errors.New("addr is empty")
 	}
-	c := Config{Addr: addr}
-	return &c, nil
+
+	config.Addr = addr
+	return config, nil
 }
