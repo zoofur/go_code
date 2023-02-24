@@ -19,7 +19,7 @@ func (u user) NoHello() {
 
 
 func main() {
-	var u *user = &user{}
+	var u user
 	u.Hello("于立凯")
 	u.NoHello()
 }
