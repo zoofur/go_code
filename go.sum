@@ -1,0 +1,7 @@
+github.com/fengyoulin/hookingo v0.1.2 h1:vBf5ySt2/cymuqGCweQT14rUcZuin+LCcl5wy3O1QW8=
+github.com/fengyoulin/hookingo v0.1.2/go.mod h1:qXWbi6b1dIXCyvCyk7Nbnv4ZWO3wfMp8Ih/etuOkfl0=
+golang.org/x/arch v0.0.0-20190927153633-4e8777c89be4 h1:QlVATYS7JBoZMVaf+cNjb90WD/beKVHnIxFKT4QaHVI=
+golang.org/x/arch v0.0.0-20190927153633-4e8777c89be4/go.mod h1:flIaEI6LNU6xOCD5PaJvn9wGP0agmIOqjrtsKGRguv4=
+golang.org/x/sys v0.0.0-20191026070338-33540a1f6037 h1:YyJpGZS1sBuBCzLAR1VEpK193GlqGZbnPFnPV/5Rsb4=
+golang.org/x/sys v0.0.0-20191026070338-33540a1f6037/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+rsc.io/pdf v0.1.1/go.mod h1:n8OzWcQ6Sp37PL01nO98y4iUCRdTGarVfzxY20ICaU4=
