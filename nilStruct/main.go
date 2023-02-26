@@ -9,10 +9,6 @@ type MyInterfaceImplement struct {
 	name string
 }
 
-func (m *MyInterfaceImplement) Get() string {
-	return ""
-}
-
 type MyStruct struct {}
 
 // go run -gcflags="-m" main.go
@@ -20,6 +16,7 @@ func main() {
 	a := new(struct{})
 	b := new(struct{})
 	println(a, b, a == b) // 空结构体不能相互比较
+	println(struct{}{} == struct{}{})
 
 	c := new(struct{})
 	d := new(struct{})
@@ -29,10 +26,11 @@ func main() {
 	g := new(MyStruct)
 	h := new(MyStruct)
 	println(g, h, g == h)
+	println(MyStruct{} == MyStruct{})
 
-	e := new(MyInterface)
-	f := new(MyInterface)
-	println(e, f, e == f) // 指针比较什么? 类型和值?
+	e := new(interface{})
+	f := new(interface{})
+	println(e, f, e == f) // 接口比较什么?
 
 	i := &MyInterfaceImplement{}
 	j := &MyInterfaceImplement{}
