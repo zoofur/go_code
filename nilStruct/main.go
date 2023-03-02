@@ -9,7 +9,8 @@ type MyInterfaceImplement struct {
 	name string
 }
 
-type MyStruct struct {}
+type MyStruct struct {
+}
 
 // go run -gcflags="-m" main.go
 func main() {
@@ -26,7 +27,12 @@ func main() {
 	g := new(MyStruct)
 	h := new(MyStruct)
 	println(g, h, g == h)
-	println(MyStruct{} == MyStruct{})
+
+	x := MyStruct{}
+	y := MyStruct{}
+	println(x == y)
+	println(&x, &y, &x == &y)
+	println(&x, &y, *&x == *&y)
 
 	e := new(interface{})
 	f := new(interface{})
